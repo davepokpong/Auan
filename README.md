@@ -35,3 +35,12 @@ Using `bash update.sh` or `git pull origin master`.
 - `bash push.sh <text for commit>` This command is for you need to add all changed files to git repository and commit it with the same statement.
 - `bash push.sh` This is used for some user who need to commit each file manually and need only just `git push` to main branch.
 **after `bash push.sh` you will see "Push only mode enable" means if you haven't manually committed any file yet, git will not allow you to push your update.**
+
+# Using ClearFile feature
+#### This feature is using for clearing any file in the entire repository.
+### Work with clearfile.py
+- Make sure `python3` is installed
+- If it's not try `sudo apt install python3` (Linux) or `brew install python3` (MacOS) or download from https://www.python.org/downloads/ (Others)
+- Go to root directory of this repository (where `clearfile.py` is located)
+- Type `python3 clearfile.py <filename>` then press `enter` (filename: name of the file you want to delete)
+- The script will executed and delete all `<filename>` file(s) in the entire git repo.
