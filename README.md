@@ -22,7 +22,7 @@ You can easily initialize __this git__ repository be using `initgit.sh` file by 
 - Don't do any bullshit pranks. It's not fun with a valueable files being damaged.
 
 # Usage
-#### In Github, the safest way for your workflows is by doing __Pulling &rarr; work(merge) &rarr; Pushing__ everytime you do something.
+#### In Github, the safest way for your workflows is by doing [ Pulling &rarr; work(merge) &rarr; Pushing ] everytime you do something.
 
 # Pull Instructions
 #### Pulling some update to your directory.
