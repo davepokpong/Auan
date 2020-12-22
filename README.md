@@ -16,7 +16,7 @@ You can easily initialize __this git__ repository be using `initgit.sh` file by 
 - If everything is fine your git will be ready to use.
 ### And hey!!!!! Don't forget to ask DAVE for a repository access permission.
 
-# Rule
+# Rules
 - Don't Panic
 - Respect each others.
 - Don't do any bullshit pranks. It's not fun with a valueable files being damaged.
