@@ -1,9 +1,10 @@
 # Hello Audiences
-Co-working space for 4 users
+Co-working space for 5 users
 - Beam
 - Dave
 - Frank
 - Per
+- Palm
 
 # Initialize this Github Repository
 You can easily initialize __this git__ repository be using `initgit.sh` file by follow these steps.
