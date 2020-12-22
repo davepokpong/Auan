@@ -2,7 +2,7 @@
 echo "Pulling the latest version of this repositoy............"
 git pull origin main
 currentpath="$PWD"
-cd ..
+cd 
 cp -r "$PWD" "$currentpath/Shared"
 echo "commit files as $1"
 cd "$currentpath"
