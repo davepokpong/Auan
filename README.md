@@ -36,7 +36,7 @@ Using `bash update.sh` or `git pull origin master`.
 - `bash push.sh` This is used for some user who need to commit each file manually and need only just `git push` to main branch.
 **after `bash push.sh` you will see "Push only mode enable" means if you haven't manually committed any file yet, git will not allow you to push your update.**
 
-# Using ClearFilำ
+# Using ClearFile
 #### This feature is using for clearing any file in the entire repository.
 ### Work with clearfile.py
 - Make sure `python3` is installed
