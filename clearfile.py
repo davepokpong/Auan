@@ -29,7 +29,7 @@ def Traverse(root,count,filename):
         
 print("====================================================")
 print()
-print("Searching for .DS_Store ")
+print("Searching for {filename} ")
 print(f"Start scanning from {os.path.abspath(os.getcwd())}")
 Traverse(os.path.abspath(os.getcwd()),count,filename)
 print(f"Scanning Done, Deleted all {count} file(s) with title {filename}")
