@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $1
 echo "Pulling the latest version of this repository..."
 git pull origin main
 echo "==================================================================="
@@ -7,8 +8,8 @@ echo "==================================================================="
 echo "Pushing to the repository..."
 if [$1 != ""]
 then
-    git add .
-    git commit -m "$1"
+    git add .;
+    git commit -m "$1";
     echo "==================================================================="
     echo "          ** All files have been committed."
     echo "==================================================================="
