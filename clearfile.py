@@ -6,7 +6,7 @@ def Traverse(root,count,filename):
     mypath = root
     os.chdir(root)
     print(f"Check at {root}")
-    onlydir = [d for d in os.listdir(mypath) if not os.isfile(os.join(mypath, d))]
+    onlydir = [d for d in os.listdir(mypath) if not os.path.isfile(os.path.join(mypath, d))]
     files = [f for f in os.listdir(mypath)]
     for i in files:
         print(f"    scanning: {i}")
@@ -33,10 +33,15 @@ if (__name__ == "__main__"):
     filename = sys.argv[1]
     print("====================================================")
     print()
-    print("Searching for {filename} ")
+    print(f"Searching for {filename} ")
     print(f"Start scanning from {os.path.abspath(os.getcwd())}")
     Traverse(os.path.abspath(os.getcwd()),count,filename)
-    print(f"Scanning Done, Deleted all {count} file(s) with title {filename}")
+    if (count == 0):
+        print("---------------------------------------------------------------------------")
+        print(f"No file found under {mypath}")
+        print("---------------------------------------------------------------------------")
+    else:
+        print(f"Scanning Done, Deleted all {count} file(s) with title {filename}")
     print("The entire Git was cleaned.")
     print()
     print("====================================================")
