@@ -1,11 +1,11 @@
 #!/bin/bash
 echo $1
-echo "\e[96mPulling the latest version of this repository..."
+echo -e "\e[96mPulling the latest version of this repository..."
 git pull origin main
 echo "==================================================================="
 echo "          ** commit files as ------>    <$1>"
 echo "==================================================================="
-echo "\e[96mPushing to the repository..."
+echo -e "\e[96mPushing to the repository..."
 if [ "$1" != "-null" ]
 then
     git add .
@@ -21,4 +21,4 @@ then
     echo "==================================================================="
 fi
 git push -u origin main
-echo "\e[96mProcess DONE!!"
+echo -e "\e[96mProcess DONE!!"
