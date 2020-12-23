@@ -34,4 +34,7 @@ if (__name__ == "__main__"):
     print(f"         Seaching for {filename} ...")
     print()
     Traverse(root,filename,count,searchtype)
+    if (count == 0):
+        print(f"No file found under {root}")
+    print()
     print("="*60)
