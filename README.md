@@ -26,9 +26,17 @@ You can easily initialize __this git__ repository be using `initgit.sh` file by 
 #### In Github, the safest way for your workflows is by doing [ Pulling &rarr; work(merge) &rarr; Pushing ] everytime you do something.
 
 
-# Branches (Beta)
-- Under development
-- comming soon...
+# Branches
+
+### Creating new branch
+- use `git branch <branch-name>` then `git checkout <branch-name>`
+- or by using `newbranch.sh` with the command `bash newbranch.sh <branch-name>`
+- you will be at your new branch right now.
+
+### Merging your new branch with the other branches.
+- go to the branch you want to merge with. (Like I've done my work on "test" branch and want the "main" branch to update like "test" branch, then I need to go in to the "main" branch.) by type `git checkout <branch1>`
+- then use `git merge <branch2>`:  bring __branch2__ into __branch1__
+- and `bash push.sh <commit-text> <branch2>`
 
 # Pull Instructions
 #### Pulling some update to your directory.
