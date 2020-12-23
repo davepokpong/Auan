@@ -1,13 +1,12 @@
 import os
 import sys
-from os.path import isfile, join
 
 
 def Traverse(root,count,filename):
     mypath = root
     os.chdir(root)
     print(f"Check at {root}")
-    onlydir = [d for d in os.listdir(mypath) if not isfile(join(mypath, d))]
+    onlydir = [d for d in os.listdir(mypath) if not os.isfile(os.join(mypath, d))]
     files = [f for f in os.listdir(mypath)]
     for i in files:
         print(f"    scanning: {i}")
