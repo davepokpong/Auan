@@ -40,13 +40,13 @@ In Github, the safest way for your workflows is by doing __[ Pulling &rarr; Work
 
 # Pull Instructions
 #### Pulling some update to your directory.
-Using `bash update.sh` or `git pull origin master`.
+Using `bash pulle.sh` or `git pull origin <branch>`.
 
 # Push Instructions
 #### Pushing your update to the git repository.
 ### `push.sh` instructions
-- `bash push.sh <text for commit>` This command is for you need to add all changed files to git repository and commit it with the same statement.
-- `bash push.sh` This is used for some user who need to commit each file manually and need only just `git push` to main branch.
+- `bash push.sh <text for commit> <branch>` This command is for you need to add all changed files to git repository and commit it with the same statement to the given branch.
+- `bash push.sh -null <branch>` This is used for some user who need to commit each file manually and need only just `git push` to the given branch.
 
 **after `bash push.sh` you will see "Push only mode enable" means if you haven't manually committed any file yet, git will not allow you to push your update.**
 
