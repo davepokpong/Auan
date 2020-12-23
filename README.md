@@ -23,7 +23,7 @@ You can easily initialize __this git__ repository be using `initgit.sh` file by 
 - Don't do any bullshit pranks. It's not fun with a valueable files being damaged.
 
 # Branches (Beta)
-- Under development.
+- Under development
 - comming soon...
 
 # Usage
