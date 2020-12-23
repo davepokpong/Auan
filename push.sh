@@ -1,7 +1,6 @@
 #!/bin/bash
-echo $1
 echo "Pulling the latest version of this repository..."
-git pull origin main
+git pull origin $2
 echo "==================================================================="
 echo "          ** commit files as ------>    <$1>"
 echo "==================================================================="
@@ -20,5 +19,5 @@ then
     echo "          ** Push only mode enable."
     echo "==================================================================="
 fi
-git push -u origin main
+git push -u origin $2
 echo "Process DONE"
