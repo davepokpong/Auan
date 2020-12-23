@@ -3,22 +3,57 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: aqua;">
-        <h1 class="title" id="title">Hello World</h1>
-        <h3>Franky is hamdsome.</h3> 
-        <p>Beam is handsome too.</p>
-        <button onclick="changeWord()">Click Here!</button>
-        <button id="button" onclick="CHangeWord2()">Click Me AI SUS!</button>
-        <div style="background-color:brown ; width: 19.89%; margin-left: 20%;">NAPASIN SAENGTOHNG DESU</div>
+    <body style="background-color: black;">
+        <h1 class="title" id="title">Hello from Anonymous</h1>
+        <div style="padding-top: 3%">
+            <p class="center-text">This is from someone. I will give you the example</p>
+            <p class="center-text">of HTML code below. Please take more time for learning<br></p>
+            <p class="center-text">HTML!!. I need someone to help me do a project. Good luck.</p>
+        </div> 
+        <hr style="width: 70%; margin-top: 10%; border-color: rgb(56, 56, 56);">
+        <div style="padding-top: 7%"></div>
+        <h1 class="title" id="title" style="margin-top: 0;">Basic Elements</h1>
+        <table style="width: 100%; min-height: 200px;">
+            <tr style="height: 300px;">
+                <td class="font" style="text-align: right; width: 50%; padding-right: 5%">
+                    <button class="button1" onclick="Hello()">Click me</button>
+                </td>
+                <td class="font" style="width: 50%;">
+                    <p class="font" style="font-size: 160%;">This is the &#60;button&#62; tag.</p>
+                    <p class="font" style="font-size: 160%;">Press it to get the action.</p>
+                </td>
+            </tr>
+            <tr style="height: 300px;">
+                <td class="font" style="text-align: right; width: 50%; padding-right: 5%;">
+                    <input type="text" id="input-box" class="input-box">
+                    <button class="button2" onclick="HelloName()" style="width: 100px; height: 40px; margin-left: 5%;">Say Hello</button>
+                </td>
+                <td class="font" style="width: 50%;">
+                    <p class="font" style="font-size: 160%;">This is the &#60;input&#62; tag.</p>
+                    <p class="font" style="font-size: 160%;">Type something and press the </p>
+                    <p class="font" style="font-size: 160%;">button to get the action.</p>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: center;">
+                    <p class="font" style="text-align: center; font-size: 140%; color:  rgb(231, 255, 97); font-weight: lighter;">Get the input-box value by using</p>
+                    <p class="font" style="text-align: center; font-size: 140%; color:  rgb(231, 255, 97); font-weight: lighter">document.getElementById(id).value in javascript.</p>
+                </td>
+            </tr>
+            <tr style="height: 300px;"></tr>
+        </table>
+        <hr style="width: 70%; margin-top: 10%; border-color: rgb(56, 56, 56);">
+        <div style="width: 100%; height: auto; text-align: center; margin-top: 7%;">
+            <p class="font" style="font-size: 190%; font-weight: bold;">So now it's your turn</p>
+            <p class="font" style="font-size: 160%;">You have seen a bunch of HTML5 code.</p>
+            <p class="font" style="font-size: 160%;">Try to do a simple html page with these</p>
+            <p class="font" style="font-size: 160%;">two elements. Have fun!</p>
+        </div>
+        <div style="height: 1100px; width: 100%; text-align: center; padding-top: 200px;">
+            <p class="font" style="font-size: 100%;">[Add new elements here]</p>
+        </div>
     </body>
-    <script>
-        function changeWord()
-        {
-            document.getElementById("title").innerHTML = "FranKydeSU is Handsome.";
-        }
-        function CHangeWord2()
-        {
-            document.getElementById("button").innerHTML = "KUAY";
-        }
-    </script>
+    <script src="script.js"></script>
 </html>

@@ -1,6 +1,92 @@
 .title 
 {
+    color: rgb(255, 255, 255);
+    margin-top: 20%;
+    font-size: 400%;
+    font-family: Helvetica;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 3px 70px #7a7a7a;
+    box-shadow: 20px;
+    transition: 300ms ease;
 }
 
+.title:hover {
+    transform: scale(1.2);
+    color: rgb(231, 255, 97);
+    text-shadow: 0px 0px 3px rgb(0, 56, 78);
+}
+
+.center-text {
+    font-size: 160%;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    font-weight: medium;
+    transition: 200ms ease;
+
+}
+.center-text:hover {
+    color:rgb(231, 255, 97);
+}
+
+.font {
+    color: white;
+    font-family: Helvetica;
+}
+
+.button1 {
+    font-family: Helvetica;
+    font-size: 180%;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(231, 255, 97);;
+    border: none;
+    transition: 300ms ease;
+}
+.button1:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.button2 {
+    font-family: Helvetica;
+    font-size: 100%;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    transition: 300ms ease;
+}
+.button2:hover {
+    color: black;
+    background-color:rgb(231, 255, 97);;
+    transform: scale(1.2);
+}
+
+
+.input-box {
+    font-family: Helvetica;
+    font-size: 100%;
+    color:darkslategrey;
+    font-weight: lighter;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    transition: 300ms ease;
+}
+
+.input-box:focus {
+    transform: scale(1.1);
+}
+
+.font-center {
+    width: 100%;
+}
