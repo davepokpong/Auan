@@ -1,9 +1,9 @@
 function Hello() {
-    alert("Hello Franky")
+    alert("Hello World")
 }
 
 function HelloName() {
     alert(
-        "Hello "+document.getElementById("input-box").value
+        "You say: "+document.getElementById("input-box").value
     )
 }
