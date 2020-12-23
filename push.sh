@@ -21,4 +21,4 @@ then
     echo "==================================================================="
 fi
 git push -u origin main
-echo -e "\e[96mProcess DONE!!"
+echo -e "\e[96mProcess DONE"
