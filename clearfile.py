@@ -3,10 +3,6 @@ import sys
 from os.path import isfile, join
 
 
-mypath = os.path.abspath(os.getcwd())
-count = 0
-filename = sys.argv[1]
-
 def Traverse(root,count,filename):
     mypath = root
     os.chdir(root)
@@ -26,13 +22,22 @@ def Traverse(root,count,filename):
         Traverse(f"{root}/{i}",count,filename)
     return
 
-        
-print("====================================================")
-print()
-print("Searching for {filename} ")
-print(f"Start scanning from {os.path.abspath(os.getcwd())}")
-Traverse(os.path.abspath(os.getcwd()),count,filename)
-print(f"Scanning Done, Deleted all {count} file(s) with title {filename}")
-print("The entire Git was cleaned.")
-print()
-print("====================================================")
+if (__name__ == "__main__"):
+
+    mypath = os.path.abspath(os.getcwd())
+    count = 0
+    if (len(sys.argv) == 1):
+        print("\n     ** Require filename !! **  \n")
+        print("clearFile manual: ")
+        print("     - try >> python3 clearfile.py <your-file-name>")
+        exit()
+    filename = sys.argv[1]
+    print("====================================================")
+    print()
+    print("Searching for {filename} ")
+    print(f"Start scanning from {os.path.abspath(os.getcwd())}")
+    Traverse(os.path.abspath(os.getcwd()),count,filename)
+    print(f"Scanning Done, Deleted all {count} file(s) with title {filename}")
+    print("The entire Git was cleaned.")
+    print()
+    print("====================================================")
