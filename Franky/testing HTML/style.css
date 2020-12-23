@@ -33,6 +33,14 @@
     color: white;
     font-family: Helvetica;
 }
+.hfont {
+    color: white;
+    font-family: Helvetica;
+    transition: 250ms ease;
+}
+.hfont:hover {
+    color: tomato;
+}
 
 .button1 {
     font-family: Helvetica;
