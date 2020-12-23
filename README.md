@@ -6,7 +6,7 @@ Co-working space for 5 users
 - Per
 - Palm
 
-# Initialize this Github Repository
+# Initialize this GitHub Repository
 You can easily initialize __this git__ repository be using `initgit.sh` file by follow these steps.
 - Use `mkdir` for create directory on your computer `mkdir <directory name>`.
 - Download `initgit.sh` then put it in to the directory you just created.
