@@ -49,4 +49,4 @@ Using `bash update.sh` or `git pull origin master`.
 - If it's not try `sudo apt install python3` (Linux) or `brew install python3` (MacOS) or download from https://www.python.org/downloads/ (Others)
 - Go to root directory of this repository (where `clearfile.py` is located)
 - Type `python3 clearfile.py <filename>` then press `enter` (filename: name of the file you want to delete)
-- The script will executed and delete all `<filename>` file(s) in the entire git repo.
+- The script will be executed and delete all `<filename>` file(s) in the entire git repo.
