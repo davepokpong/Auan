@@ -2,6 +2,7 @@ import os
 import sys
 
 def Traverse(root,filename,count,searchtype):
+
     mypath = root
     os.chdir(mypath)
     #print(f"Check at directory: {root}/")
@@ -11,30 +12,42 @@ def Traverse(root,filename,count,searchtype):
     if (searchtype == 'dir'):
         if (filename in onlydir):
             print(f"Found (dir): {mypath}/{filename}")
+            count += 1
+    elif (searchtype == "type"):
+        for k in allfiles:
+            if (filename in k):
+                print(f"Found(file): {mypath}/{k}")
+                count += 1
     else:
         for i in onlyfiles:
             if (i == filename):
                 print(f"Found (file): {mypath}/{filename}")
+                count += 1
                 break
     for i in onlydir:
-        Traverse(f"{root}/{i}",filename,count,searchtype)
-    return
+        count += Traverse(f"{root}/{i}",filename,0,searchtype)
+    return count
 
 if (__name__ == "__main__"):
     os.chdir("../..")
     count = 0
     filename = sys.argv[1]
-    if (len(sys.argv) == 3):
+    if (len(sys.argv) >= 3):
         searchtype = sys.argv[2]
     else:
         searchtype = "file"
+    if (len(sys.argv) >= 4):
+        root = os.path.abspath(os.getcwd())+'/'+sys.argv[3]
+    else:
+        root = os.path.abspath(os.getcwd())
 
-    root = os.path.abspath(os.getcwd())
     print("="*60)
     print(f"         Seaching for {filename} ...")
     print()
-    Traverse(root,filename,count,searchtype)
+    count = Traverse(root,filename,count,searchtype)
     if (count == 0):
         print(f"No file found under {root}")
+    else:
+        print(f"Find {count} file(s) under dir: {root}")
     print()
     print("="*60)
