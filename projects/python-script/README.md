@@ -11,4 +11,4 @@ The script findfile.py is used for searching the entire repository for `<filenam
 - `<dir>`: If you are searching all files under the repository, leave it __blank__.
 - `<dir>`: Enter the path which referred from to `root` directory. The root directory is at your main folder which `push.sh` and `update.sh` is located.
 then make a reference from the root directory to the directory you wish 
-> Example `python3 findfile.py README.md -f /Beam/solve` means searching under `<git-repo>/Beam/solve` folder for `README.md` files.
+> Example `python3 findfile.py README.md -file /Beam/solve` means searching under `<git-repo>/Beam/solve` folder for `README.md` files.
