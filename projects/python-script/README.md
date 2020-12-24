@@ -4,6 +4,7 @@
 The script findfile.py is used for searching the entire repository for `<filename>`
 - type `python3 findfile.py <filename> <searchtype> <dir>` in your terminal.
 - `<filename>`: Your searching file's name. (include your file type such as `helloWorld.js` etc.)
+  - use `-all` as `<filename>` to search for all files (In this mode , `<searchtype>` and `<dir>` are not required).
 - `<searchtype>`: using these search options below &darr;
   - `-file` : search only __files__.
   - `-dir`  : search only __directories__.
