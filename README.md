@@ -29,7 +29,7 @@ In Github, the safest way for your workflows is by doing __[ Pulling &rarr; Work
 # Branches
 
 ### Creating new branch
-#### note: `newbranch.sh` is not available rightnow.
+#### Note: File `newbranch.sh` is not available right now.
 - use `git branch <branch-name>` then `git checkout <branch-name>`
 - or by using `newbranch.sh` with the command `bash newbranch.sh <branch-name>`
 - you will be at your new branch right now.
