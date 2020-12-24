@@ -29,6 +29,7 @@ In Github, the safest way for your workflows is by doing __[ Pulling &rarr; Work
 # Branches
 
 ### Creating new branch
+#### note: `newbranch.sh` is not available rightnow.
 - use `git branch <branch-name>` then `git checkout <branch-name>`
 - or by using `newbranch.sh` with the command `bash newbranch.sh <branch-name>`
 - you will be at your new branch right now.
@@ -40,7 +41,7 @@ In Github, the safest way for your workflows is by doing __[ Pulling &rarr; Work
 
 # Pull Instructions
 #### Pulling some update to your directory.
-Using `bash pulle.sh` or `git pull origin <branch>`.
+Using `bash pull.sh` or `git pull origin <branch>`.
 
 # Push Instructions
 #### Pushing your update to the git repository.
