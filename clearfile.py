@@ -9,17 +9,19 @@ def Traverse(root,count,filename):
     onlydir = [d for d in os.listdir(mypath) if not os.path.isfile(os.path.join(mypath, d))]
     files = [f for f in os.listdir(mypath)]
     for i in files:
-        print(f"    scanning: {i}")
+        print(f"        scanning: {i}")
         if (i == filename):
-            print(f"Found {filename} at {root}")
+            print("        "+"-"*80)
+            print(f"    >>  Found {filename} at {root}")
             os.remove(filename)
-            print(f"{filename} is deleted")
+            print(f"    >>  {filename} is deleted")
+            print("        "+"-"*80)
             count += 1
     for i in onlydir:
         if (i[0] == '.'):
             continue
-        Traverse(f"{root}/{i}",count,filename)
-    return
+        count += Traverse(f"{root}/{i}",0,filename)
+    return count
 
 if (__name__ == "__main__"):
 
@@ -31,11 +33,12 @@ if (__name__ == "__main__"):
         print("     - try >> python3 clearfile.py <your-file-name>")
         exit()
     filename = sys.argv[1]
-    print("====================================================")
+    print("==============================================================")
     print()
-    print(f"Searching for {filename} ")
-    print(f"Start scanning from {os.path.abspath(os.getcwd())}")
-    Traverse(os.path.abspath(os.getcwd()),count,filename)
+    print(f"Searching for {filename} ...")
+    print(f"Start scanning from [ {os.path.abspath(os.getcwd())} ]")
+    print()
+    count = Traverse(os.path.abspath(os.getcwd()),count,filename)
     if (count == 0):
         print("---------------------------------------------------------------------------")
         print(f"No file found under {mypath}")
@@ -44,4 +47,5 @@ if (__name__ == "__main__"):
         print(f"Scanning Done, Deleted all {count} file(s) with title {filename}")
     print("The entire Git was cleaned.")
     print()
-    print("====================================================")
+    print("==============================================================")
+    print()
