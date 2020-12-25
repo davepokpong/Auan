@@ -4,7 +4,7 @@ You can get some of my general information here
 - id: 6210503578
 - email: nutchanon.chant@ku.th
 
-**If you need more detailed personal information please contact me via email**
+**If you need my personal information please contact me via email**
 
 # You can read the simplified instructions below.
 - See full manual text file by using `cat manual` command in terminal. (Only in this directory)
