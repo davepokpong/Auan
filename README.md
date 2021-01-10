@@ -12,7 +12,7 @@ You can easily initialize __this git__ repository be using `initgit.sh` file by 
 - Download `initgit.sh` then put it in to the directory you just created.
 - In case you cannot download `initgit.sh`, copy the script then `vi initgit.sh` and press `i` for insert mode then paste it and save it by `esc + :wq`.
 - Type this command in your terminal (path must be your new blank directory with `initgit.sh`) `bash initgit.sh`
-- Oh! make sure you have already configured git account. If you have no idea what is it, look up at &darr;
+- Oh! make sure you have configured default git account. If you have no idea what it is, look up at &darr;
 > https://medium.com/trueid-developers/เริ่มใช้-git-command-line-ฉบับรวบรัดใช้งานใน-5-นาที-e871be9807eb
 - If everything is fine your git will be ready to use.
 ### And hey!!!!! Don't forget to ask DAVE for a repository access permission.
