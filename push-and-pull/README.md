@@ -1,5 +1,6 @@
 # push-and-pull
 <<<<<<< HEAD
+<<<<<<< HEAD
 Nik Kunraho Struyf
 s hihi
 saddasdasdasdasd
@@ -10,3 +11,8 @@ Nik Kunraho Struyf
 kuyyyyy
 
 # Pop Cat
+=======
+ - Nik Kunraho Struyf
+ - BON CPE
+
+>>>>>>> ca78d37346f38564270a6146c181114628be85a3
